@@ -18,7 +18,7 @@ Rosé pine:
   modes:
     dark:
       # Header:
-      app-header-background-color: rgb(35, 33, 54)
+      app-header-background-color: rgb(25 23 36)
       app-header-text-color: var(--primary-text-color)
       app-header-selection-bar-color: var(--primary-color)
       # Main Interface Colors
