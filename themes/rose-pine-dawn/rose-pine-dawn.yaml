@@ -1,0 +1,141 @@
+# Base -  rgb(250 244 237)
+# Surface -  rgb(255 250 243)
+# Overlay -  rgb(242 233 222)
+# Muted -  rgb(152 147 165)
+# Subtle -  rgb(121 117 147)
+# Text -  rgb(87 82 121)
+# Love -  rgb(180 99 122)
+# Gold -  rgb(234 157 52)
+# Rose -  rgb(215 130 126)
+# Pine -  rgb(40 105 131)
+# Foam -  rgb(86 148 159)
+# Iris -  rgb(144 122 169)
+# Highlight Low -  rgb(244 237 232)
+# Highlight Med -  rgb(223 218 217)
+# Highlight High - rgb(206 202 205)
+
+rosepine:
+  modes:
+    light:
+      # Header:
+      app-header-background-color: rgb(35, 33, 54)
+      app-header-text-color: var(--primary-text-color)
+      app-header-selection-bar-color: var(--primary-color)
+      # Main Interface Colors
+      primary-color: rgb(180 99 122)
+      lovelace-background: rgb(255 250 243)
+      primary-background-color: rgb(42, 39, 63)
+      secondary-background-color: rgb(35, 33, 54)
+      divider-color: rgb(242 233 222)
+      accent-color: var(--primary-color)
+      # Text
+      primary-text-color: rgb(87 82 121)
+      secondary-text-color: rgb(121 117 147)
+      text-primary-color: var(--primary-text-color)
+      disabled-text-color: rgb(152 147 165)
+      # Sidebar Menu
+      sidebar-icon-color: rgb(121 117 147)
+      sidebar-text-color: rgb(87 82 121)
+      sidebar-background-color: var(--app-header-background-color)
+      sidebar-selected-icon-color: var(--primary-color)
+      sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+      # Buttons
+      paper-item-icon-color: rgb(121 117 147)
+      paper-item-icon-active-color: var(--primary-color)
+      # States and Badges
+      state-icon-color: var(--paper-item-icon-color)
+      state-icon-active-color: var(--paper-item-icon-active-color)
+      state-icon-unavailable-color: rgb(152 147 165)
+      # Sliders
+      paper-slider-knob-color: rgb(121 117 147)
+      paper-slider-knob-start-color: var(--paper-slider-knob-color)
+      paper-slider-pin-color: var(--paper-slider-active-color)
+      paper-slider-active-color: rgb(234 157 52)
+      paper-slider-secondary-color: var(--paper-slider-active-color)
+      slider-track-color: rgb(85, 85, 87)
+      # Labels
+      label-badge-background-color: var(--secondary-background-color)
+      label-badge-text-color: var(--primary-text-color)
+      label-badge-red: rgb(180 99 122)
+      label-badge-green: rgb(86 148 159)
+      label-badge-blue: rgb(40 105 131)
+      label-badge-yellow: rgb(234 157 52)
+      label-badge-gray: rgb(223 218 217)
+      # Cards
+      card-background-color: rgb(242 233 222)
+      ha-card-background: rgb(242 233 222)
+      ha-card-border-color: none
+      ha-card-border-width: 0px
+      paper-dialog-background-color: var(--card-background-color)
+      paper-listbox-background-color: var(--card-background-color)
+      paper-card-background-color: var(--card-background-color)
+      # Switches
+      switch-checked-button-color: rgb(121 117 147)
+      switch-checked-track-color: rgb(40 105 131)
+      switch-unchecked-button-color: var(--switch-checked-button-color)
+      switch-unchecked-track-color: rgb(242 233 222)
+      # Toggles
+      paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
+      paper-toggle-button-checked-bar-color: var(--switch-checked-track-color)
+      paper-toggle-button-unchecked-button-color: var(--switch-unchecked-button-color)
+      paper-toggle-button-unchecked-bar-color: var(--switch-unchecked-track-color)
+      # Table
+      table-row-background-color: rgb(223 218 217)
+      table-row-alternative-background-color: rgb(206 202 205)
+      data-table-background-color: rgb(244 237 232)
+      # Dropdowns
+      material-background-color: var(--table-row-background-color)
+      material-secondary-background-color: var(--table-row-alternative-background-color)
+      mdc-theme-surface: var(--secondary-background-color)
+      # Pre/Code
+      markdown-code-background-color: rgb(206 202 205)
+      # Checkboxes
+      mdc-checkbox-unchecked-color: rgb(121 117 147)
+      mdc-checkbox-disable-color: var(--disabled-text-color)
+      mdc-select-fill-color: rgb(244 237 232)
+      mdc-select-ink-color: var(--primary-text-color)
+      mdc-select-label-ink-color: var(--secondary-text-color)
+      mdc-select-idle-line-color: var(--primary-text-color)
+      mdc-select-dropdown-icon-color: rgb(121 117 147)
+      mdc-select-hover-line-color: var(--accent-color)
+      mdc-text-field-fill-color: var(--mdc-select-fill-color)
+      # Input
+      input-fill-color: var(--secondary-background-color)
+      input-dropdown-icon-color: var(--secondary-text-color)
+      input-ink-color: var(--primary-text-color)
+      input-label-ink-color: var(--secondary-text-color)
+      input-idle-line-color: var(--primary-text-color)
+      input-hover-line-color: var(--accent-color)
+      # Error, Warning, Success and Info colors
+      error-color: rgb(180 99 122)
+      warning-color: rgb(234 157 52)
+      sucess-color: rgb(40 105 131)
+      info-color: rgb(215 130 126)
+      # Progress bar
+      ha-bar-background-color: var(--slider-track-color)
+      # Mushroom Custom cards
+      mush-rgb-state-entity: 1, 122, 255
+      mush-rgb-green: 50, 215, 75
+      mush-rgb-yellow: 255, 214, 10
+      mush-rgb-orange: 255, 159, 10
+      mush-rgb-cyan: 90, 200, 245
+      mush-rgb-purple: 191, 90, 242
+      mush-rgb-pink: 255, 55, 95
+      mush-rgb-red: 255, 69, 58
+      mush-rgb-gray: 90, 89, 88
+      mush-rgb-disabled: 197, 197, 198
+      mush-icon-border-radius: 25%
+      mush-rgb-state-media-player: 0, 122, 255
+      #RGB
+      rgb-primary-text-color: 255, 255, 255
+      rgb-primary-color: 255, 255, 255
+      rgb-accent-color: 0, 122, 255
+      rgb-state-switch-color: var(--rgb-accent-color)
+      rgb-state-light-color: var(--rgb-accent-color)
+      rgb-state-fan-color: var(--rgb-accent-color)
+      rgb-state-script-color: var(--rgb-accent-color)
+      rgb-state-vacuum-color: var(--rgb-accent-color)
+      rgb-state-remote-color: var(--rgb-accent-color)
+      rgb-state-input-boolean-color: var(--rgb-accent-color)
+      rgb-state-humidifier-color: var(--rgb-accent-color)
+      rgb-state-cover-color: var(--rgb-accent-color)
