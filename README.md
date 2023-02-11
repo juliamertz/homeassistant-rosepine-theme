@@ -1,7 +1,7 @@
 # Rosé pine theme for homeassistant
 
 ## Screenshot
-![screenshot of dashboard with the rosé pine moon theme applied](https://i.imgur.com/Zzo390s.png)
+![screenshot of dashboard with the rosé pine moon theme applied](https://i.imgur.com/CVXjAND.png)
 
 ## Installation
 1. Download your favourite flavour of rosé pine
