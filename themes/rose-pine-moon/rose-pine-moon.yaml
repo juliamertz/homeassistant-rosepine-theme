@@ -18,14 +18,14 @@ Rosé pine moon:
   modes:
     dark:
       # Header:
-      app-header-background-color: rgb(35, 33, 54)
+      app-header-background-color: rgb(35 33 54)
       app-header-text-color: var(--primary-text-color)
       app-header-selection-bar-color: var(--primary-color)
       # Main Interface Colors
       primary-color: rgb(235 111 146)
       lovelace-background: rgb(42 39 63)
-      primary-background-color: rgb(42, 39, 63)
-      secondary-background-color: rgb(35, 33, 54)
+      primary-background-color: rgb(42 39 63)
+      secondary-background-color: rgb(35 33 54)
       divider-color: rgb(57 53 82)
       accent-color: var(--primary-color)
       # Text
@@ -52,7 +52,7 @@ Rosé pine moon:
       paper-slider-pin-color: var(--paper-slider-active-color)
       paper-slider-active-color: rgb(246 193 119)
       paper-slider-secondary-color: var(--paper-slider-active-color)
-      slider-track-color: rgb(85, 85, 87)
+      slider-track-color: rgb(85 85 87)
       # Labels
       label-badge-background-color: var(--secondary-background-color)
       label-badge-text-color: var(--primary-text-color)

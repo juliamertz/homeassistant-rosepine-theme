@@ -24,8 +24,8 @@ Rosé pine dawn:
       # Main Interface Colors
       primary-color: rgb(180 99 122)
       lovelace-background: rgb(255 250 243)
-      primary-background-color: rgb(42, 39, 63)
-      secondary-background-color: rgb(35, 33, 54)
+      primary-background-color: rgb(255 250 243)
+      secondary-background-color: rgb(250 244 237)
       divider-color: rgb(242 233 222)
       accent-color: var(--primary-color)
       # Text
@@ -52,7 +52,7 @@ Rosé pine dawn:
       paper-slider-pin-color: var(--paper-slider-active-color)
       paper-slider-active-color: rgb(234 157 52)
       paper-slider-secondary-color: var(--paper-slider-active-color)
-      slider-track-color: rgb(85, 85, 87)
+      slider-track-color: rgb(85 85 87)
       # Labels
       label-badge-background-color: var(--secondary-background-color)
       label-badge-text-color: var(--primary-text-color)
