@@ -12,6 +12,6 @@
 ![screenshot of dashboard with the rosé pine dawn theme applied](https://i.imgur.com/Zr9Sl0d.png)
 
 ## Installation
-1. Download your favourite flavour of rosé pine
+1. Download your favourite flavour of rosé pine (Both the regular and moon version include dawn as a light option)
 2. Move the downloaded folder into `[config]/themes/`
 3. Restart home assistant.
