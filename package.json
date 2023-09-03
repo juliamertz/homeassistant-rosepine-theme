@@ -1,0 +1,8 @@
+{
+	"dependencies": {
+		"yaml": "^2.3.2"
+	},
+	"scripts": {
+		"build": "./build.sh"
+	}
+}
