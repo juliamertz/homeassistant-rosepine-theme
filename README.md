@@ -13,10 +13,9 @@
 
 ## Usage
 
-1. Open Home Assistant
-2. Download your favourite variant of rosé pine located in `/themes/` (Both the regular and moon version include dawn as a light option)
-3. Move the downloaded folder into `[home assistant config]/themes/`
-4. Restart home assistant.
+1. Download your favourite variant of rosé pine located in `/themes/` (Both the regular and moon version include dawn as a light option)
+2. Move the downloaded folder into `[home assistant config]/themes/`
+3. Restart home assistant.
 
 ## Gallery
 
