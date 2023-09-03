@@ -21,13 +21,14 @@
 ## Gallery
 
 ### Rosé pine
-![screenshot of dashboard with the rosé pine theme applied](https://i.imgur.com/0aYD1PB.png)
+![screenshot of dashboard with the rosé pine theme applied](https://i.imgur.com/XRHhED6.png)
 
 ### Rosé pine moon
-![screenshot of dashboard with the rosé pine moon theme applied](https://i.imgur.com/CVXjAND.png)
+![screenshot of dashboard with the rosé pine moon theme applied](https://i.imgur.com/qGFdSc4.png)
 
 ### Rosé pine dawn
-![screenshot of dashboard with the rosé pine dawn theme applied](https://i.imgur.com/Zr9Sl0d.png)
+![screenshot of dashboard with the rosé pine moon dawn applied](https://i.imgur.com/53a4gvA.png)
+
 
 ## Thanks to
 
