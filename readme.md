@@ -12,10 +12,26 @@
 </p>
 
 ## Usage
+### Install using HACS
+1. HACS tab > Menu > Custom Repository
+2. Paste this repo's URL
+3. Select theme in the dropdown
+4. Install Rosé Pine for Home Assistant from HACS
+5. Home Assistant > Settings > Frontend > Add > Rosé Pine for Home Assistant > Install
 
+#### Note
+If the themes don't show up, make sure you add this snippet to `configuration.yaml`
+```yaml
+frontend:
+  themes: !include_dir_merge_named themes
+```
+
+### Manual installation
 1. Download your favourite variant of rosé pine located in `/themes/` (Both the regular and moon version include dawn as a light option)
 2. Move the downloaded folder into `[home assistant config]/themes/`
 3. Restart home assistant.
+
+
 
 ## Gallery
 
