@@ -36,9 +36,7 @@
 ## Contributing
 
 
-Modify `template.json` using Rosé Pine variables, then build variants:
-
+Modify `template.json` using Rosé Pine variables, then build variants with a [xonsh ](https://xon.sh/) script
 ```sh
-pnpm i
-pnpm build
+./build
 ```
