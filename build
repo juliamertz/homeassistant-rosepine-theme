@@ -1,0 +1,45 @@
+#!/usr/bin/env xonsh
+
+npx @rose-pine/build -t "./template.yaml" -f "rgb-function"
+
+
+import os
+import ruamel.yaml
+
+# Get a list of files in the "./dist" directory
+files = os.listdir("./dist")
+variants = {}
+
+for filename in files:
+    with open(f"./dist/{filename}", "r", encoding="utf8") as file:
+        content = file.read()
+        parsed = ruamel.yaml.YAML(typ="safe").load(content)
+        variant = list(parsed.keys())[0]
+        variants[variant] = parsed[variant]["modes"]["dark"]
+
+for variant in variants.keys():
+    data = {
+        variant: {
+            "modes": {
+                "dark": variants[variant],
+                "light": variants["Rosé Pine Dawn"],
+            },
+        },
+    }
+
+    # Modify the filename to match the JavaScript version
+    filename = variant.lower().replace(" ", "-").replace("é", "e")
+    with open(f"./dist/{filename}.yaml", "w", encoding="utf8") as file:
+        ruamel.yaml.YAML().dump(data, file)
+
+rm dist/rose-pine-dawn.yaml
+
+rm -rf themes
+mkdir themes ./themes/rose-pine ./themes/rose-pine-moon
+mv dist/rose-pine.yaml ./themes/rose-pine
+mv dist/rose-pine-moon.yaml ./themes/rose-pine-moon
+rm -rf dist
+
+print("Done!")
+
+
