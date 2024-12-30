@@ -39,13 +39,13 @@ frontend:
 ## Gallery
 
 ### Rosé pine
-![screenshot of dashboard with the rosé pine theme applied](https://i.imgur.com/XRHhED6.png)
+![screenshot of dashboard with the rosé pine theme applied](https://i.imgur.com/eZL6RGO.png)
 
 ### Rosé pine moon
-![screenshot of dashboard with the rosé pine moon theme applied](https://i.imgur.com/qGFdSc4.png)
+![screenshot of dashboard with the rosé pine moon theme applied](https://i.imgur.com/FsQkNzD.png)
 
 ### Rosé pine dawn
-![screenshot of dashboard with the rosé pine moon dawn applied](https://i.imgur.com/53a4gvA.png)
+![screenshot of dashboard with the rosé pine moon dawn applied](https://i.imgur.com/OJvpiBj.png)
 
 
 ## Thanks to
