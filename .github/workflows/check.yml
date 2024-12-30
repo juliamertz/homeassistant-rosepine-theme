@@ -1,0 +1,14 @@
+name: HACS Check
+on:
+  push:
+  pull_request:
+
+jobs:
+  hacs:
+    name: HACS Action
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: HACS Action
+        uses: "hacs/action@main"
+        with:
+          category: "theme"
