@@ -98,22 +98,22 @@ $name:
       # Progress bar
       ha-bar-background-color: var(--slider-track-color)
       # Mushroom Custom cards
-      mush-rgb-state-entity: 1, 122, 255
-      mush-rgb-green: 50, 215, 75
-      mush-rgb-yellow: 255, 214, 10
-      mush-rgb-orange: 255, 159, 10
-      mush-rgb-cyan: 90, 200, 245
-      mush-rgb-purple: 191, 90, 242
-      mush-rgb-pink: 255, 55, 95
-      mush-rgb-red: 255, 69, 58
-      mush-rgb-gray: 90, 89, 88
-      mush-rgb-disabled: 197, 197, 198
+      mush-rgb-state-entity: $foam:rgb
+      mush-rgb-green: $pine:rgb
+      mush-rgb-yellow: $gold:rgb
+      mush-rgb-orange: $rose:rgb
+      mush-rgb-cyan: $foam:rgb
+      mush-rgb-purple: $iris:rgb
+      mush-rgb-pink: $love:rgb
+      mush-rgb-red: $love:rgb
+      mush-rgb-gray: $highlight_med:rgb
+      mush-rgb-disabled: $muted:rgb
       mush-icon-border-radius: 25%
-      mush-rgb-state-media-player: 0, 122, 255
+      mush-rgb-state-media-player: $foam:rgb
       #RGB
-      rgb-primary-text-color: 255, 255, 255
-      rgb-primary-color: 255, 255, 255
-      rgb-accent-color: 0, 122, 255
+      rgb-primary-text-color: $text:rgb
+      rgb-primary-color: $text:rgb
+      rgb-accent-color: $foam:rgb
       rgb-state-switch-color: var(--rgb-accent-color)
       rgb-state-light-color: var(--rgb-accent-color)
       rgb-state-fan-color: var(--rgb-accent-color)
