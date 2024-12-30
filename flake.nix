@@ -33,16 +33,10 @@
               ${lib.getExe rosePineBuild} ${./template.yaml} --format rgb-function -o $out
 
               sed -i '1,3d' $out/dawn.yaml
-              append_dawn() {
-                echo "    light:" >> $1
-                tmp=$(mktemp)
-                cat $1 $out/dawn.yaml > $tmp
-                cat $tmp > $1
-                rm $tmp
-              }
-
-              append_dawn $out/main.yaml
-              append_dawn $out/moon.yaml
+              echo "    light:" >> $out/main.yaml
+              cat $out/dawn.yaml >> $out/main.yaml
+              echo "    light:" >> $out/moon.yaml
+              cat $out/dawn.yaml >> $out/moon.yaml
               rm $out/dawn.yaml
 
               mkdir $out/rose-pine
