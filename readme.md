@@ -55,7 +55,7 @@ frontend:
 ## Contributing
 
 
-Modify `template.json` using Rosé Pine variables, then build variants with a [xonsh ](https://xon.sh/) script
+Modify `template.json` using Rosé Pine variables, then build with nix
 ```sh
-./build
+nix build .
 ```

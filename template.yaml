@@ -44,7 +44,7 @@ $name:
       label-badge-green: $foam
       label-badge-blue: $pine
       label-badge-yellow: $gold
-      label-badge-gray: $highlightMed
+      label-badge-gray: $highlight_med
       # Cards
       card-background-color: $overlay
       ha-card-background: $overlay
@@ -64,19 +64,19 @@ $name:
       paper-toggle-button-unchecked-button-color: var(--switch-unchecked-button-color)
       paper-toggle-button-unchecked-bar-color: var(--switch-unchecked-track-color)
       # Table
-      table-row-background-color: $highlightMed
-      table-row-alternative-background-color: $highlightHigh
-      data-table-background-color: $highlightLow
+      table-row-background-color: $highlight_med
+      table-row-alternative-background-color: $highlight_high
+      data-table-background-color: $highlight_low
       # Dropdowns
       material-background-color: var(--table-row-background-color)
       material-secondary-background-color: var(--table-row-alternative-background-color)
       mdc-theme-surface: var(--secondary-background-color)
       # Pre/Code
-      markdown-code-background-color: $highlightHigh
+      markdown-code-background-color: $highlight_high
       # Checkboxes
       mdc-checkbox-unchecked-color: $subtle
       mdc-checkbox-disable-color: var(--disabled-text-color)
-      mdc-select-fill-color: $highlightLow
+      mdc-select-fill-color: $highlight_low
       mdc-select-ink-color: var(--primary-text-color)
       mdc-select-label-ink-color: var(--secondary-text-color)
       mdc-select-idle-line-color: var(--primary-text-color)
