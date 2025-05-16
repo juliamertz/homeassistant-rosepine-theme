@@ -1,56 +1,54 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    flake-parts = {
-      url = "github:hercules-ci/flake-parts";
-      inputs.nixpkgs-lib.follows = "nixpkgs";
-    };
-    rosepine-build = {
-      url = "github:juliamertz/rosepine-buildrs";
+    systems.url = "github:nix-systems/default";
+
+    rose-pine-build = {
+      url = "github:juliamertz/rose-pine-build?dir=nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs =
-    { nixpkgs, ... }@inputs:
-    inputs.flake-parts.lib.mkFlake { inherit inputs; } {
-      systems = nixpkgs.lib.systems.flakeExposed;
-      perSystem =
-        {
-          config,
-          pkgs,
-          lib,
-          system,
-          ...
-        }:
-        let
-          rosePineBuild = inputs.rosepine-build.packages.${system}.default;
-        in
-        {
-          packages.default = pkgs.stdenv.mkDerivation {
-            name = "homeassistant-rose-pine";
-            src = ./.;
-            buildPhase = ''
-              ${lib.getExe rosePineBuild} ${./template.yaml} --format rgb-function -o $out
 
-              sed -i '1,3d' $out/dawn.yaml
-              echo "    light:" >> $out/main.yaml
-              cat $out/dawn.yaml >> $out/main.yaml
-              echo "    light:" >> $out/moon.yaml
-              cat $out/dawn.yaml >> $out/moon.yaml
-              rm $out/dawn.yaml
+  outputs = {
+    nixpkgs,
+    systems,
+    rose-pine-build,
+    ...
+  }: let
+    forAllSystems = function:
+      nixpkgs.lib.genAttrs (import systems) (system:
+        function nixpkgs.legacyPackages.${system});
+  in {
+    packages = forAllSystems ({
+      stdenvNoCC,
+      system,
+      ...
+    }: {
+      default = stdenvNoCC.mkDerivation {
+        name = "homeassistant-rose-pine";
 
-              mkdir $out/rose-pine
-              mkdir $out/rose-pine-moon
-              mv $out/main.yaml $out/rose-pine/rose-pine.yaml
-              mv $out/moon.yaml $out/rose-pine-moon/rose-pine-moon.yaml
-            '';
-          };
+        src = ./template.yaml;
+        dontUnpack = true;
 
-          devShells.default = pkgs.mkShell {
-            packages = [
-              rosePineBuild
-            ];
-          };
-        };
-    };
+        nativeBuildInputs = [rose-pine-build.packages.${system}.default];
+
+        buildPhase = ''
+          rose-pine-build $src --format rgb-function -o .
+
+          sed -i '1,3d' dawn.yaml
+          echo "    light:" >> main.yaml
+          cat dawn.yaml >> main.yaml
+          echo "    light:" >> moon.yaml
+          cat dawn.yaml >> moon.yaml
+        '';
+
+        installPhase = ''
+          mkdir -p $out/rose-pine
+          mkdir -p $out/rose-pine-moon
+          mv main.yaml $out/rose-pine/rose-pine.yaml
+          mv moon.yaml $out/rose-pine-moon/rose-pine-moon.yaml
+        '';
+      };
+    });
+  };
 }
